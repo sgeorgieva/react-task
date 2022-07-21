@@ -1,0 +1,22 @@
+.primary-button {
+  background-color: #3c8bff;
+  border-radius: 2rem;
+  border: 0;
+  width: 14.563rem;
+  height: 3.938rem;
+  z-index: 1;
+}
+
+.primary-button > span {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media only screen and (max-device-width: 767px),
+  (min-device-width: 800px) and (max-device-height: 767px) {
+  .primary-button {
+    width: 12.563rem;
+    height: 2.938rem;
+  }
+}

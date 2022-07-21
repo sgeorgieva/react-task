@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-wrapper,
+.header-innerwrapper {
+  position: relative;
+}
+
+.header-wrapper .img-fluid {
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  width: 5%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.header-wrapper .primary-button {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.payments-terminal-devices {
+  position: relative;
+}
+
+.payment-terminal-gradient {
+  position: absolute;
+  width: 835px;
+  height: 1600px;
+  background-image: url('../../assets/background-blobs/payment-systems-blob.png');
+  top: -22%;
+  left: -20%;
+  z-index: -1;
+  background-size: 100% 100%;
+}
+
+.terminal-additions-wrapper {
+  padding-top: 15rem;
+}
+
+.terminal-icons-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5.625rem 0;
+}
+
+.terminal-icons-wrapper > div > div:first-child {
+  column-gap: 3.775rem;
+}
+
+.terminal-icons-wrapper > div > div:nth-child(2) {
+  column-gap: 12.5rem;
+}
+
+.terminal-icons-wrapper > div > div:last-child {
+  column-gap: 7.5rem;
+}
+
+.terminal-icons-wrapper > div > div:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.terminal-icons-wrapper > div > div:last-child .payment-type {
+  text-transform: uppercase;
+}
+
+.people-terminal-wrapper {
+  position: relative;
+  margin-bottom: 13.75rem;
+}
+
+.people-terminal-wrapper::after {
+  box-shadow: inset 0 45rem 0 rgb(0 0 0 / 50%);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.people-terminal-wrapper .img-fluid {
+  opacity: 0.75;
+}
+
+.people-terminal-wrapper .primary-button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.people-terminal-wrapper > .line-text {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.last-row-devices {
+  margin-top: 2.813rem;
+}
+
+.payments-terminal-outterwrapper {
+  position: absolute;
+  left: 27%;
+  top: 10%;
+}
+
+.rectangle {
+  position: absolute;
+  content: '';
+  width: 29.75rem;
+  height: 30.438rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  background-image: url('../../assets/images/shapes/rotated-rectangle.png');
+  background-repeat: no-repeat;
+}
+
+.first-row-devices .col-md-4:nth-child(2) .euro-primary {
+  background-image: url('../../assets/images/euros/euro3.png');
+  top: -10%;
+  left: 70%;
+  transform: translate(-5%);
+}
+
+.first-row-devices .col-md-4:last-child .euro-primary {
+  background-image: url('../../assets/images/euros/euro4.png');
+  top: -2%;
+  left: 67%;
+}
+
+.last-row-devices .col-md-4:first-child .euro-primary {
+  background-image: url('../../assets/images/euros/euro1.png');
+  top: -7%;
+  left: 63%;
+}
+
+.last-row-devices .col-md-4:nth-child(2) .euro-primary {
+  background-image: url('../../assets/images/euros/euro1.png');
+  top: -3%;
+  left: 66.6%;
+}
+
+.last-row-devices .col-md-4:last-child .euro-primary {
+  background-image: url('../../assets/images/euros/euro2.png');
+  top: -13%;
+  left: 63%;
+}
+
+.payments-systems {
+  margin-top: 5.313rem;
+  margin-bottom: 9.063rem;
+}
+
+.payments-systems .img-fluid {
+  width: auto;
+  height: 2.5rem;
+}
+
+.payments-systems > div {
+  column-gap: 0.625rem;
+  row-gap: 0.625rem;
+}
+
+.carousel-wrapper {
+  position: relative;
+  margin: 2.813rem 0;
+  padding-bottom: 2.813rem;
+}
+
+.carousel-innerwrapper {
+  width: 90%;
+  margin-left: 8%;
+}
+
+.slick-dots .slick-active > div {
+  background-color: #177df3 !important;
+  width: 1.188rem !important;
+  height: 1.188rem !important;
+}
+
+.slick-dots {
+  margin: 0 -5%;
+}
+
+.testimonial-gradient {
+  position: absolute;
+  width: 2860px;
+  height: 2693px;
+  background-image: url('../../assets/background-blobs/testimonial-blob.png');
+  z-index: -1;
+  top: -40%;
+  left: 7%;
+  background-size: 100% 100%;
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+  .header-wrapper > .img-fluid {
+    width: 15%;
+  }
+
+  .people-terminal-wrapper > .line-text {
+    top: 30%;
+  }
+
+  .people-terminal-wrapper .primary-button {
+    top: 75%;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: landscape),
+  (min-device-width: 800px) and (max-device-height: 767px) {
+  .payment-terminal-gradient {
+    width: 65%;
+    height: 100%;
+  }
+
+  .terminal-additions-wrapper {
+    padding-top: 7.5rem;
+  }
+
+  .people-terminal-wrapper .primary-button {
+    top: 65%;
+  }
+
+  .first-row-devices .col-md-4:nth-child(2) .euro-primary {
+    left: 63%;
+  }
+
+  .first-row-devices .col-md-4:last-child .euro-primary {
+    left: 61.5%;
+  }
+
+  .last-row-devices .col-md-4:nth-child(2) .euro-primary {
+    left: 62.5%;
+  }
+
+  .message-device-wrapper {
+    left: 8%;
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  .terminal-icons-wrapper > div > div {
+    flex-direction: column;
+  }
+
+  .terminal-icons-wrapper {
+    padding: 2.3rem 0;
+  }
+
+  .terminal-icons-wrapper > div > div > div:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+
+  .terminal-additions-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .people-terminal-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .payments-terminal-outterwrapper {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .payments-terminal-devices > .row > .col-md-4:nth-child(2) {
+    margin: 2.5rem 0;
+  }
+
+  .payments-terminal-devices > .row:nth-child(2) > .col-md-4:nth-child(2) {
+    margin-bottom: 10rem;
+  }
+
+  .payments-systems > div {
+    row-gap: 0.938rem;
+  }
+
+  .payments-systems {
+    margin-bottom: 5.063rem;
+  }
+
+  .slick-dots ul {
+    padding-left: 0;
+  }
+
+  .carousel-innerwrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .slick-dots {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-height: 767px) {
+  .terminal-icons-wrapper > div > div {
+    flex-direction: column;
+  }
+
+  .terminal-icons-wrapper {
+    padding: 2.3rem 0;
+  }
+
+  .terminal-icons-wrapper > div > div > div:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+
+  .terminal-additions-wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .people-terminal-wrapper {
+    margin-bottom: 8rem;
+  }
+
+  .message-device-wrapper {
+    max-width: 90%;
+    transform: translate(-8%, -10%);
+    top: -65%;
+  }
+
+  .rectangle {
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    top: 35%;
+  }
+
+  .last-row-devices {
+    margin-top: 3.75rem;
+  }
+
+  .payments-systems > div {
+    row-gap: 0.938rem;
+  }
+
+  .payments-systems {
+    margin-bottom: 5.063rem;
+  }
+
+  .carousel-innerwrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .slick-dots {
+    margin: 0;
+  }
+}

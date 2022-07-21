@@ -1,0 +1,73 @@
+.moneybox-list {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 350px;
+  height: 140px;
+  top: 80%;
+  left: 30%;
+  background: #3c8cff;
+  background: -moz-linear-gradient(left, #3c8cff 0%, #09c1dc 100%);
+  background: -webkit-linear-gradient(left, #3c8cff 0%, #09c1dc 100%);
+  background: linear-gradient(to right, #3c8cff 0%, #09c1dc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c8cff', endColorstr='#09c1dc',GradientType=1 );
+  padding: 1.125rem;
+  font-size: 1.563rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 0.625rem;
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.moneybox-list .moneybox-item {
+  margin-left: 1rem;
+}
+
+.moneybox-list .moneybox-item p {
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.moneybox-list .moneybox-item:last-child > p {
+  margin-top: 1rem;
+}
+
+.moneybox-list .moneybox-item > p::before {
+  content: '\2022';
+  color: #fff;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+@media only screen and (max-device-width: 767px),
+  (min-device-width: 800px) and (max-device-height: 767px) {
+  .moneybox-list {
+    top: 80%;
+    width: 15rem;
+    height: 6rem;
+  }
+
+  .moneybox-list .moneybox-item:first-child {
+    margin-bottom: 0;
+  }
+
+  .moneybox-item p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+  .moneybox-list {
+    left: 2%;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: landscape),
+  (min-device-width: 800px) and (max-device-height: 767px) {
+  .moneybox-list {
+    left: 20%;
+  }
+}

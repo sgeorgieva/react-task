@@ -1,0 +1,25 @@
+.background-wrapper {
+  height: 100vh;
+}
+
+.background-overlay {
+  background: url('../../assets/background-blobs/header-blob.png');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -2;
+}
+
+.image {
+  background-image: url('../../assets/images/shutterstock_590056586.png');
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: overlay;
+  box-shadow: inset 5rem 5rem 5rem rgb(65 69 89 / 50%);
+}

@@ -1,0 +1,39 @@
+.message-device-wrapper {
+  position: absolute;
+  top: -35%;
+  width: 307px;
+  height: 130px;
+  border-radius: 10px;
+  filter: drop-shadow(-8.426px 7.071px 49px rgba(0, 0, 0, 0.16));
+  background-color: #ffffff;
+  text-align: left;
+  padding: 15px 15px 30px 15px;
+}
+
+.message-device-wrapper::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -15%;
+  width: 0;
+  height: 0;
+  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
+  border-top: 1.25rem solid #fff;
+  transform: translateX(-50%);
+}
+
+.message-title {
+  margin: 0;
+  font-size: 1.125rem;
+  letter-spacing: 0;
+  font-weight: 700;
+  color: #048ef8;
+  line-height: 1;
+}
+
+.message-content {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin: 0;
+}

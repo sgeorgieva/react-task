@@ -1,0 +1,66 @@
+.business-icon {
+  background: url('../../assets/images/additions-icons/account-icon.png');
+}
+
+.data-icon {
+  background: url('../../assets/images/additions-icons/data-connectivity-icon.png');
+}
+
+.visacard-icon {
+  background: url('../../assets/images/additions-icons/debit-card-icon.png');
+}
+
+.dashboard-icon {
+  background: url('../../assets/images/additions-icons/dashboard-icon.png');
+}
+
+.money-account-icon {
+  background: url('../../assets/images/additions-icons/money-account-icon.png');
+}
+
+.support-icon {
+  background: url('../../assets/images/additions-icons/support-icon.png');
+}
+
+.payment-wrapper {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.938rem;
+}
+
+.icon {
+  height: 5rem;
+  width: 5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.payment-addition {
+  font-size: 1.5rem;
+  color: #373838;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.payment-type {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #2e3131;
+}
+
+@media only screen and (max-device-width: 767px),
+  (min-device-width: 800px) and (max-device-height: 767px) {
+  .payment-wrapper {
+    flex-direction: column;
+    row-gap: 0.938rem;
+    text-align: center;
+  }
+
+  .payment-addition {
+    font-size: 1.25rem;
+  }
+
+  .payment-type {
+    font-size: 1rem;
+  }
+}

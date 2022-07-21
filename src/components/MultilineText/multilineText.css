@@ -1,0 +1,33 @@
+.multiline-text-wrapper {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 300;
+  color: white;
+}
+
+.multiline-text-wrapper p:first-child {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.multiline-text-wrapper p:last-child {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-device-width: 767px),
+  (min-device-width: 800px) and (max-device-height: 767px) {
+  .multiline-text-wrapper {
+    width: 100%;
+  }
+
+  .multiline-text-wrapper p:first-child {
+    font-size: 1.8rem;
+  }
+
+  .multiline-text-wrapper p:last-child {
+    font-size: 1rem;
+  }
+}

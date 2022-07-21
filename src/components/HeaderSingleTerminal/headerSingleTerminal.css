@@ -1,0 +1,96 @@
+.header-single-terminal-wrapper {
+  background-image: url('../../assets/images/payment-devices/mypos-terminal-header.png');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 19%;
+  top: 50%;
+  left: 63%;
+}
+
+.header-single-terminal-wrapper::before {
+  content: '';
+  background-image: url('../../assets/images/shapes/circle-dots.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: 42%;
+  top: 52%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.header-single-terminal-wrapper::after {
+  content: '';
+  background-image: url('../../assets/images/shapes/dashes-circle.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: 24%;
+  top: 63%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.terminal-price-image {
+  background-image: url('../../assets/images/euros/euro6.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 8rem;
+  height: 9rem;
+  top: 7%;
+  left: -3%;
+  transform: translate(-27%, -20%);
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+  .header-single-terminal-wrapper {
+    width: 40rem;
+    height: 14rem;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    top: 100%;
+    left: 35%;
+  }
+
+  .header-single-terminal-wrapper::after {
+    top: 75%;
+  }
+
+  .terminal-price-image {
+    width: 6rem;
+    height: 6rem;
+    background-size: 100%;
+    top: -3%;
+    left: -7.5%;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: landscape),
+  (max-device-width: 860px) and (orientation: landscape) {
+  .header-single-terminal-wrapper {
+    width: 39rem;
+    height: 19rem;
+    background-size: 19%;
+    top: 60%;
+    left: 70%;
+  }
+
+  .header-single-terminal-wrapper::after {
+    top: 67%;
+  }
+
+  .terminal-price-image {
+    width: 5rem;
+    height: 5rem;
+    background-size: 100%;
+    top: 1%;
+    left: -9%;
+    transform: translate(-7%, -24%);
+  }
+}

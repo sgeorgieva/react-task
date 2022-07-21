@@ -1,0 +1,62 @@
+.payment-device-wrapper {
+  position: relative;
+}
+
+.payment-device-text {
+  padding-top: 2.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.063rem;
+  color: #333;
+  font-weight: 300;
+}
+
+.euro-primary {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 6rem;
+  height: 6rem;
+}
+
+.payment-device-image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.payment-device-image:hover::after {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.payments-terminal-wrapper:hover .payment-device-text {
+  font-weight: 700;
+}
+
+@media only screen and (max-device-width: 767px),
+  (min-device-width: 800px) and (max-device-height: 767px) {
+  .payment-device-text {
+    font-size: 1.25rem;
+    padding-top: 0.938rem;
+  }
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-height: 767px) {
+  .last-row-devices {
+    margin-top: 3.75rem !important;
+  }
+
+  .euro-primary {
+    background-size: 60%;
+    top: 35%;
+  }
+}

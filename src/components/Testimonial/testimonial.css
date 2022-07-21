@@ -1,0 +1,108 @@
+.testimonial-wrapper {
+  width: 435px;
+  filter: drop-shadow(-0.785px 14.979px 35px rgba(0, 0, 0, 0.17));
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  margin: 0 0.313rem;
+}
+
+.testimonial-image-wrapper {
+  margin: 0.625rem 0.625rem 0;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  background-image: url('../../assets/images/testimonial/arrow-play.png');
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  width: 6.25rem;
+  height: 6.25rem;
+  top: 50%;
+  left: 50%;
+}
+
+.testimonial-text-wrapper {
+  margin: 2.813rem 2.5rem 0;
+}
+
+.testimonial-text-wrapper > h3,
+.testimonial-text-wrapper > h4 {
+  font-size: 1.5rem;
+  letter-spacing: 0.063rem;
+  color: #2e2e2e;
+  line-height: 1;
+}
+
+.testimonial-text-wrapper > h3 {
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+}
+
+.testimonial-text-wrapper > h4 {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.testimonial-text-wrapper > .testimonial-content {
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: #333333;
+  font-weight: 400;
+}
+
+.testimonial-content > p:first-child {
+  margin-bottom: 2.5rem;
+  margin-top: 2.813rem;
+}
+
+.testimonial-content > p:last-child {
+  margin-bottom: 3.438rem;
+}
+
+@media only screen and (max-device-width: 767px) {
+  .arrow {
+    transform: translate(-25%, -50%);
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    background-size: 50%;
+  }
+}
+
+@media only screen and (max-device-width: 767px),
+  (min-device-width: 800px) and (max-device-height: 767px) {
+  .slick-slide > .slick-track > .slick-slide > div {
+    display: flex;
+  }
+
+  .testimonial-text-wrapper {
+    margin: 0.5rem 1rem;
+  }
+
+  .testimonial-text-wrapper > h3 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-text-wrapper > h4 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-content > p:first-child {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .testimonial-content > p:last-child {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+  .testimonial-wrapper {
+    margin: 0 5%;
+  }
+}
