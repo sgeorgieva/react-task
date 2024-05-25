@@ -14,7 +14,7 @@ First, install the programs required to run the application:
 Next, clone this repository and install dependencies:
 
 ```
-git clone git@github.com:SantiyaGeorgieva/react-task.git
+git clone git@github.com:sgeorgieva/react-task.git
 ```
 
 ```
